@@ -11560,6 +11560,7 @@ You can test by using a stored procedure, so the application must be sanitize th
 
 <details>
 <summary>How HTTPS is different from HTTP?</summary><br><b>
+
 </b></details>
 
 <details>
@@ -12477,6 +12478,7 @@ percentage ratio
 
 <details>
 <summary>What is HTTP?</summary><br><b>
+HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack.  A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
 </b></details>
 
 <details>
@@ -12498,6 +12500,8 @@ False. It doesn't maintain state for incoming request.
 
 <details>
 <summary>How HTTP request looks like?</summary><br><b>
+An HTTP response is what web clients (often browsers) receive from an Internet server in answer to an HTTP request. These responses communicate valuable information based on what was asked for in the HTTP request.
+
 
 It consists of:
 
@@ -12507,13 +12511,19 @@ It consists of:
 </b></details>
 
 <details>
+<summary>What is in an HTTP request body?</summary><br><b>
+
+The body of a request is the part that contains the ‘body’ of information the request is transferring. The body of an HTTP request contains any information being submitted to the web server, such as a username and password, or any other data entered into a form.
+</b></details>
+
+<details>
 <summary>What HTTP method types are there?</summary><br><b>
 
-* GET
-* POST
+* GET:    Used to request data from an endpoint
+* POST:   Sends data to an endpoint
 * HEAD
-* PUT
-* DELETE
+* PUT:    Update a record or data value at an endpoint.
+* DELETE: Remove data from an endpoint.
 * CONNECT
 * OPTIONS
 * TRACE
@@ -12531,6 +12541,12 @@ It consists of:
 
 <details>
 <summary>What is HTTPS?</summary><br><b>
+Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website. HTTPS is encrypted in order to increase security of data transfer.
+</b></details>
+
+<details>
+<summary>What is HTTPS?</summary><br><b>
+Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website. HTTPS is encrypted in order to increase security of data transfer.
 </b></details>
 
 <details>
@@ -12553,14 +12569,39 @@ The server didn't receive a response from another server it communicates with in
 
 <details>
 <summary>What is a proxy?</summary><br><b>
+A forward proxy, often called a proxy, proxy server, or web proxy, is a server that sits in front of a group of client machines. When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like a middleman.
 </b></details>
 
 <details>
 <summary>What is a reverse proxy?</summary><br><b>
+A reverse proxy is a server that sits in front of web servers and forwards client (e.g. web browser) requests to those web servers. Reverse proxies are typically implemented to help increase security, performance, and reliability. 
+</b></details>
+
+
+<details>
+<summary>How is a reverse proxy different?</summary><br><b>
+A reverse proxy is a server that sits in front of one or more web servers, intercepting requests from clients. This is different from a forward proxy, where the proxy sits in front of the clients. With a reverse proxy, when clients send requests to the origin server of a website, those requests are intercepted at the network edge by the reverse proxy server. The reverse proxy server will then send requests to and receive responses from the origin server.
+
+The difference between a forward and reverse proxy is subtle but important. A simplified way to sum it up would be to say that a forward proxy sits in front of a client and ensures that no origin server ever communicates directly with that specific client. On the other hand, a reverse proxy sits in front of an origin server and ensures that no client ever communicates directly with that origin server.
 </b></details>
 
 <details>
+<summary>Applications of Reverse Proxy?</summary><br><b>
+
+  * Load Balancing -  a reverse proxy can provide a load balancing solution which will distribute the incoming traffic evenly among the different servers to prevent any single server from becoming overloaded. In the event that a server fails completely, other servers can step up to handle the traffic.
+  * Protection from attacks - With a reverse proxy in place, a web site or service never needs to reveal the IP address of their origin server(s). This makes it much harder for attackers to leverage a targeted attack against them, such as a DDoS attack.
+  * Caching - A reverse proxy can also cache content, resulting in faster performance. For example, if a user in Paris visits a reverse-proxied website with web servers in Los Angeles, the user might actually connect to a local reverse proxy server in Paris, which will then have to communicate with an origin server in L.A. The proxy server can then cache (or temporarily save) the response data. Subsequent Parisian users who browse the site will then get the locally cached version from the Parisian reverse proxy server, resulting in much faster performance.
+  * SSL encryption - Encrypting and decrypting SSL (or TLS) communications for each client can be computationally expensive for an origin server. A reverse proxy can be configured to decrypt all incoming requests and encrypt all outgoing responses, freeing up valuable resources on the origin server.
+</b></details>
+
+
+<details>
 <summary>What is CDN?</summary><br><b>
+A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.
+
+A CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages, javascript files, stylesheets, images, and videos. 
+
+A properly configured CDN may also help protect websites against some common malicious attacks, such as Distributed Denial of Service (DDOS) attacks.
 </b></details>
 
 <details>

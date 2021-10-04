@@ -882,7 +882,7 @@ AWS Organizations
 <details>
 <summary>Which service would you use for web application protection?</summary><br><b>
 
-AWS WAF
+AWS WAF 
 </b></details>
 
 <details>
